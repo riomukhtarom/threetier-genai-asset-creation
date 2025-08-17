@@ -1,0 +1,270 @@
+{
+  "last_node_id": 88,
+  "last_link_id": 160,
+  "nodes": [
+    {
+      "id": 75,
+      "type": "Preview3D",
+      "pos": [
+        870.1046142578125,
+        198.15554809570312
+      ],
+      "size": [
+        936.6710815429688,
+        918.9155883789062
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model_file",
+          "type": "STRING",
+          "link": 157,
+          "widget": {
+            "name": "model_file"
+          }
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Preview3D"
+      },
+      "widgets_values": [
+        "chair9-trellis/chair9-trellis.glb",
+        true,
+        "perspective",
+        "front",
+        "original",
+        "#5a5a5a",
+        10,
+        "original",
+        75,
+        null
+      ]
+    },
+    {
+      "id": 67,
+      "type": "LoadImage",
+      "pos": [
+        31.448881149291992,
+        171.81101989746094
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            156
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "table2-B1.png",
+        "image"
+      ]
+    },
+    {
+      "id": 86,
+      "type": "IF_TrellisCheckpointLoader",
+      "pos": [
+        482.06573486328125,
+        223.42752075195312
+      ],
+      "size": [
+        315,
+        202
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "TRELLIS_MODEL",
+          "links": [
+            159
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IF_TrellisCheckpointLoader"
+      },
+      "widgets_values": [
+        "TRELLIS-image-large",
+        "dinov2_vitl14_reg",
+        false,
+        "sage",
+        true,
+        "implicit_gemm",
+        "cuda"
+      ]
+    },
+    {
+      "id": 84,
+      "type": "IF_TrellisImageTo3D",
+      "pos": [
+        469.032958984375,
+        513.3964233398438
+      ],
+      "size": [
+        340.20001220703125,
+        506
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "TRELLIS_MODEL",
+          "link": 159
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 156
+        },
+        {
+          "name": "masks",
+          "type": "MASK",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model_file",
+          "type": "STRING",
+          "links": [
+            157
+          ]
+        },
+        {
+          "name": "video_path",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "texture_image",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IF_TrellisImageTo3D"
+      },
+      "widgets_values": [
+        "single",
+        7777,
+        "fixed",
+        7.5,
+        12,
+        3,
+        12,
+        0.95,
+        1024,
+        "fast",
+        15,
+        "stochastic",
+        "chair9-trellis",
+        true,
+        false,
+        true,
+        true,
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      156,
+      67,
+      0,
+      84,
+      1,
+      "IMAGE"
+    ],
+    [
+      157,
+      84,
+      0,
+      75,
+      0,
+      "STRING"
+    ],
+    [
+      159,
+      86,
+      0,
+      84,
+      0,
+      "TRELLIS_MODEL"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Trellis",
+      "bounding": [
+        415.3531188964844,
+        91.95551300048828,
+        1472.480712890625,
+        1078.6494140625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Input Image",
+      "bounding": [
+        9.425505638122559,
+        93.63290405273438,
+        355.32086181640625,
+        402.4888610839844
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5131581182307068,
+      "offset": [
+        508.8892626679619,
+        -28.763084613054954
+      ]
+    },
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "node_versions": {
+      "comfy-core": "0.3.10",
+      "ComfyUI-IF_Trellis": "93a98c5778cab7fa256e3b262de48757dd722246"
+    }
+  },
+  "version": 0.4
+}

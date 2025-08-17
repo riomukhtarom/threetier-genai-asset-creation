@@ -1,0 +1,87 @@
+Prompt Tier 2
+
+#### Sofa ####
+Template
++ :a modern style [style name] sofa with darker color frame. [pattern name] pattern. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+- : (variants, multiples choice, strong light with dark shadow:1.2),Shadow, Dark Shadow, Strong Lighting (worst quality, low quality:1.4),(bad_prompt_version2:0.8) blur, text, cartoon, brush, low definition (two tails:1.2),FastNegativeV2,(bad-artist:1),(loli:1.2),,bad-hands-5,lowres,bad anatomy,bad hands,((text)),(watermark),error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,((username)),blurry,(extra limbs),bad-artist-anime,badhandv4,EasyNegative,ng_deepnegative_v1_75t,verybadimagenegative_v1.3,BadDream,(three hands:1.1),(three legs:1.1),(more than two hands:1.2),(more than two legs:1.2)
+
+Wood
++ :a modern style Steel sofa with darker color frame. red cushion pattern. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+Leather
++ :a modern style leather sofa with darker color frame. stell cushion pattern. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture.  
+
+Dark marble
++ : a modern style stone sofa with darker color frame. stone cushion pattern. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+
+
+#### Cabinet ####
+Template
++ :a modern style [style name] cabinet with [color style] tabletop, with [color style] door and [color] handle, . a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+- : (variants, multiples choice, strong light with dark shadow:1.2),Shadow, Dark Shadow, Strong Lighting (worst quality, low quality:1.4),(bad_prompt_version2:0.8) blur, text, cartoon, brush, low definition (two tails:1.2),FastNegativeV2,(bad-artist:1),(loli:1.2),,bad-hands-5,lowres,bad anatomy,bad hands,((text)),(watermark),error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,((username)),blurry,(extra limbs),bad-artist-anime,badhandv4,EasyNegative,ng_deepnegative_v1_75t,verybadimagenegative_v1.3,BadDream,(three hands:1.1),(three legs:1.1),(more than two hands:1.2),(more than two legs:1.2)
+
+Wood
++ :a modern style wooden cabinet with light color tabletop, with darker color door and yellow handle, . a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+Steel
++ : a modern style steel cabinet with light color tabletop, with darker color door and white metal handle, . a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+Marble
++ : a modern style marble cabinet with light color tabletop, with darker color door and white metal handle, . a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+
+
+
+#### Wardrobe ####
+Template
++ :a modern style [style name] wardrobe with [color style] frame. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+- : (variants, multiples choice, strong light with dark shadow:1.2),Shadow, Dark Shadow, Strong Lighting (worst quality, low quality:1.4),(bad_prompt_version2:0.8) blur, text, cartoon, brush, low definition (two tails:1.2),FastNegativeV2,(bad-artist:1),(loli:1.2),,bad-hands-5,lowres,bad anatomy,bad hands,((text)),(watermark),error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,((username)),blurry,(extra limbs),bad-artist-anime,badhandv4,EasyNegative,ng_deepnegative_v1_75t,verybadimagenegative_v1.3,BadDream,(three hands:1.1),(three legs:1.1),(more than two hands:1.2),(more than two legs:1.2)
+
+Wood
++ :a modern style wooden wardrobe with darker color frame. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+steel
++ :a modern style steel wardrobe with darker color frame. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture.   
+
+marble
++ : a modern style marble wardrobe with lighter color frame. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+
+
+
+#### Table ####
+Template
++ : a modern style [style name] table with [color style] tabletop, a block shape leg with [style name], a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color.
+
+- : (variants, multiples choice, strong light with dark shadow:1.2),Shadow, Dark Shadow, Strong Lighting (worst quality, low quality:1.4),(bad_prompt_version2:0.8) blur, text, cartoon, brush, low definition (two tails:1.2),FastNegativeV2,(bad-artist:1),(loli:1.2),,bad-hands-5,lowres,bad anatomy,bad hands,((text)),(watermark),error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,((username)),blurry,(extra limbs),bad-artist-anime,badhandv4,EasyNegative,ng_deepnegative_v1_75t,verybadimagenegative_v1.3,BadDream,(three hands:1.1),(three legs:1.1),(more than two hands:1.2),(more than two legs:1.2)
+
+Wood
++ :a modern wooden table with light wood color tabletop, a block shape leg with darker wood color, a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color.
+
+Ceramic
++ : a modern style ceramic table with light color tabletop, a block shape leg with darker ceramic color, a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color.
+
+Stone
++ : a modern style stone table with stone color tabletop, a block shape leg with darker stone color, a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color.
+
+
+
+
+#### Chair ####
+Template
++ :a modern style [style name] bench with darker color. [style name] pattern. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+- : (variants, multiples choice, strong light with dark shadow:1.2),Shadow, Dark Shadow, Strong Lighting (worst quality, low quality:1.4),(bad_prompt_version2:0.8) blur, text, cartoon, brush, low definition (two tails:1.2),FastNegativeV2,(bad-artist:1),(loli:1.2),,bad-hands-5,lowres,bad anatomy,bad hands,((text)),(watermark),error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,((username)),blurry,(extra limbs),bad-artist-anime,badhandv4,EasyNegative,ng_deepnegative_v1_75t,verybadimagenegative_v1.3,BadDream,(three hands:1.1),(three legs:1.1),(more than two hands:1.2),(more than two legs:1.2)
+
+Wood
++ :a modern style wooden chair with darker color. oak wood pattern. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+stone
++ :a modern style stone chair with darker color pattern. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture. 
+
+dark marble
++ : a modern style marble chair with dark color. dark pattern. a highly-detailed realistic asset. high quality. high definition, realistic, photorealistic. Consistent color. Consistent pattern. Consistent texture.

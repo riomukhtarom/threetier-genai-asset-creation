@@ -1,0 +1,12 @@
+Prompt Tier 3
+
+#### ChatGPT ####
+#### DeepSeek ####
+
+## Chair ##
+Prompt
+Generate python code to create realistic wooden chair in blender. Make sure the object is in single mesh. After create the shape and material, bake the material to image texture with diffuse. At the end, save the .blend, .dae, and glb file. I want to run it through terminal.
+
+## Table ##
+Prompt
+Generate python code to create realistic wooden table in blender. Make sure the object is in single mesh. After create the shape and material, bake the material to image texture with diffuse. At the end, save the .blend, .dae, and glb file. I want to run it through terminal.

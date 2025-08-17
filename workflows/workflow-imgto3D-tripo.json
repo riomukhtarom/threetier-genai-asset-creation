@@ -1,0 +1,303 @@
+{
+  "last_node_id": 19,
+  "last_link_id": 28,
+  "nodes": [
+    {
+      "id": 18,
+      "type": "RemBGSession+",
+      "pos": [
+        -532,
+        798
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "REMBG_SESSION",
+          "type": "REMBG_SESSION",
+          "links": [
+            22
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RemBGSession+"
+      },
+      "widgets_values": [
+        "u2net: general purpose",
+        "CPU"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "ImageRemoveBackground+",
+      "pos": [
+        -533,
+        942
+      ],
+      "size": {
+        "0": 309.37750244140625,
+        "1": 46
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "rembg_session",
+          "type": "REMBG_SESSION",
+          "link": 22,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            28
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageRemoveBackground+"
+      }
+    },
+    {
+      "id": 12,
+      "type": "TripoSRSampler",
+      "pos": [
+        -145,
+        767
+      ],
+      "size": {
+        "0": 315,
+        "1": 122
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "TRIPOSR_MODEL",
+          "link": 16,
+          "slot_index": 0
+        },
+        {
+          "name": "reference_image",
+          "type": "IMAGE",
+          "link": 27,
+          "slot_index": 1
+        },
+        {
+          "name": "reference_mask",
+          "type": "MASK",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MESH",
+          "type": "MESH",
+          "links": [
+            15
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TripoSRSampler"
+      },
+      "widgets_values": [
+        256,
+        25
+      ]
+    },
+    {
+      "id": 13,
+      "type": "TripoSRViewer",
+      "pos": [
+        206,
+        636
+      ],
+      "size": [
+        600,
+        500
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "link": 15,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TripoSRViewer"
+      },
+      "widgets_values": [
+        null
+      ]
+    },
+    {
+      "id": 15,
+      "type": "LoadImage",
+      "pos": [
+        -923,
+        694
+      ],
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            21,
+            27
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "table2-B1.png",
+        "image"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "TripoSRModelLoader",
+      "pos": [
+        -523,
+        654
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "TRIPOSR_MODEL",
+          "type": "TRIPOSR_MODEL",
+          "links": [
+            16
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TripoSRModelLoader"
+      },
+      "widgets_values": [
+        "model.ckpt",
+        8193
+      ]
+    }
+  ],
+  "links": [
+    [
+      15,
+      12,
+      0,
+      13,
+      0,
+      "MESH"
+    ],
+    [
+      16,
+      14,
+      0,
+      12,
+      0,
+      "TRIPOSR_MODEL"
+    ],
+    [
+      21,
+      15,
+      0,
+      17,
+      1,
+      "IMAGE"
+    ],
+    [
+      22,
+      18,
+      0,
+      17,
+      0,
+      "REMBG_SESSION"
+    ],
+    [
+      27,
+      15,
+      0,
+      12,
+      1,
+      "IMAGE"
+    ],
+    [
+      28,
+      17,
+      1,
+      12,
+      2,
+      "MASK"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8140274938684013,
+      "offset": {
+        "0": 976.8397915438873,
+        "1": -327.7011113195241
+      }
+    }
+  },
+  "version": 0.4
+}
