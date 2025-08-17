@@ -1,2 +1,4 @@
-# threetier-genai-asset-creation
-Supplementary materials for our paper titled "A Three-Tier Generative AI Workflow for Metaverse Asset Creation"
+# A Three-Tier Generative AI Workflow for Metaverse Asset Creation
+This repository contains the supplementary materials for our paper
+
+* **Authors:** Rio Mukhtarom Paweroi, Mutawally Syarawy, Mario Köppen
